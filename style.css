@@ -8,6 +8,10 @@ body {
     font-family: 'B612 Mono', monospace;
 }
 
+hr {
+    border-color: white;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -43,7 +47,7 @@ nav ul li {
     background-color: white;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
 }
 
@@ -125,4 +129,19 @@ h1 {
     100% {
         left: -400%;
     }
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about .aboutLeft {
+    background-color: red;
+    padding: 1% 5%;
+}
+
+.about .aboutRight {
+    background-color: midnightblue;
+    padding: 1% 5%;
 }
