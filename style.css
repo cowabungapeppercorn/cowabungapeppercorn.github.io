@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'B612 Mono', monospace;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 10px;
+    height: 15%;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+#nav-links {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.nav-link:active {
+    color: black;
+    background-color: white;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
