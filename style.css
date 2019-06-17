@@ -41,7 +41,7 @@ nav ul li {
     background-color: white;
 }
 
-section {
+.landing {
     display: flex;
     justify-content: center;
 }
