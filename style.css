@@ -43,81 +43,86 @@ nav ul li {
     background-color: white;
 }
 
-.landing {
-    height: 85%;
-    width: 75%;
-}
-
-.landing h1 {
+h1 {
     text-align: center;
 }
 
-slider {
-    display: inline-block;
-    width: 75%;
-    height: 100%;
-    background-color: #1f1f1f;
+.landing {
+    position: relative;
     overflow: hidden;
-    position: absolute;
-}
-
-slider > * {
-    position: absolute;
-    display: block;
     width: 100%;
+    height: 100vh;
+}
+
+.landing slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 85%;
+    animation: animate 10s linear infinite;
+}
+
+.landing slider slide {
+    width: 20%;
     height: 100%;
-    background: #1f1f1f;
-    animation: slide 16s infinite;
-    overflow: hidden;
+    float: left;
 }
 
-slide:nth-child(1) {
-    left: 0%;
-    animation-delay: -1s;
-    background-image: url('pics/swinging.jpg');
+.landing slider slide.slide2 {
+    background-image: url("pics/improv.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-slide:nth-child(2) {
-    animation-delay: 3s;
-    background-image: url('pics/lax.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-slide:nth-child(3) {
-    animation-delay: 7s;
-    background-image: url('pics/improv.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-slide:nth-child(4) {
-    left: 0%;
-    animation-delay: 11s;
+.landing slider slide.slide3 {
     background-image: url("pics/rafting.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-div p {
-    font-size: 70px;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    margin-top: 340px;
-    color: #fff;
+.landing slider slide.slide4 {
+    background-image: url("pics/lax.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-@keyframes slide {
-    0% { left: 100%; width: 100%}
-    5% { left: 0%;}
-    25% { left:0%;}
-    30% { left: -100%; width: 100%;}
-    30.001% { left: -100%; width: 0%;}
-    100% { left: 100%; width: 0%;}
+.landing slider slide.slide1 {
+    background-image: url("pics/swinging.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@keyframes animate{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
 }
