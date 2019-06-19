@@ -167,3 +167,30 @@ h1, h2 {
     margin: 5%;
     background-color: #111111;
 }
+
+#contact {
+    display: flex;
+    width: auto;
+    justify-items: space-around;
+    align-items: center;
+    padding: 0 2%;
+}
+
+#contact p {
+    flex-grow: 1;
+}
+
+#contactInfo {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    flex-grow: 2;
+}
+
+#backward {
+    display: inline-block;
+    -moz-transform: scale(-1, 1); 
+    -webkit-transform: scale(-1, 1);  
+    transform: scale(-1, 1); 
+}
