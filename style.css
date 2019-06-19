@@ -146,6 +146,8 @@ h1, h2 {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .about .aboutLeft {
@@ -174,6 +176,7 @@ h1, h2 {
     justify-items: space-around;
     align-items: center;
     padding: 0 2%;
+    margin: 0;
 }
 
 #contact p {
