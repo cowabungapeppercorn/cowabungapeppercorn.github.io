@@ -191,3 +191,7 @@ h1, h2 {
     list-style: none;
     flex-grow: 2;
 }
+
+.spacers {
+    margin-right: 5%;
+}
