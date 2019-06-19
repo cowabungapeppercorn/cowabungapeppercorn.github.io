@@ -3,7 +3,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #141414;
     color: white;
     font-family: 'B612 Mono', monospace;
 }
@@ -165,4 +165,5 @@ h1, h2 {
     border: 2px solid white;
     padding: 1% 5%;
     margin: 5%;
+    background-color: #111111;
 }
