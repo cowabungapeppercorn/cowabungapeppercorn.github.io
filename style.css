@@ -15,24 +15,25 @@ hr {
 nav {
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     height: 7.5%;
-    width: 100%;
     z-index: 69;
-    /* margin: 0; */
-    margin-bottom: 5%;
-    padding: 0 10px;
+    margin: 0;
+    padding: 0;
     border: 2px solid white;
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 #nav-links {
-    display: inline-flex;
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
     flex-grow: 1;
+    padding-right: 5vh;
 }
 
 nav ul li {
@@ -57,7 +58,7 @@ h1, h2 {
 }
 
 #mainHead {
-    margin-top: 5%;
+    margin-top: 10vh;
 }
 
 .landing {
